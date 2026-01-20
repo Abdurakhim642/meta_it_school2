@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 64px;
+  cursor: default;
+}
+
+/* Navbar fixed positioning */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  min-height: 64px;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.navbar-start {
+  flex: 1 1 auto;
+}
+
+.navbar-center {
+  flex: 0 1 auto;
+}
+
+.navbar-end {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+/* Links wrap qilmasligi uchun */
+.navbar a,
+.navbar button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Menu items */
+.menu {
+  gap: 0.25rem;
+}
+
+.menu li {
+  white-space: nowrap;
+}
+
+/* Content area */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.pt-16 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cards images uniform size */
+.cards figure img {
+  width: 100% !important;
+  height: 250px !important;
+  /* object-fit: cover !important; */
+  display: block;
+}
+
+.card figure {
+  overflow: hidden;
+}
